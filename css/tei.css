@@ -1,30 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 body {
-  font-size: 10pt;
+  font-size: 13pt;
   max-width: 600px;
   margin: auto;
   padding: 10px;
 }
 
 tei-body {
-  font-size: 10pt;
+  font-size: 13pt;
   max-width: 600px;
   margin: auto;
-  padding: 10px;
+  padding: 15px;
 }
 
 tei-head {
   display: block;
+  background-color: rgb(238, 239, 179);
   text-align: center;
   font-weight: bold;
-  font-size: 150%;
   padding: 20px;
-  font-size: 150%;
+  font-size: 140%;
   margin-bottom: 10px;
+  border-width: 5px;
+  border-style:groove;
+  border-color: rgb(111, 124, 209);
 }
-tei-head tei-persname {
-  font-variant: normal;
+tei-persname {
+  font-variant: small-caps;
 }
 
 tei-p {
@@ -33,20 +36,25 @@ tei-p {
 }
 tei-div{
   display: block;
-  padding: 10px;
-  background-color: antiquewhite;
+  padding: 15px;
+  background-color: rgb(231, 241, 212);
   border: dotted;
-  margin-bottom: 10px;
+  margin-right: inset;
+  border-width: 3px;
+  border-color: rgb(124, 75, 11);
+  margin-bottom: 5px;
 }
 
 tei-div[type="manuscrito"]{
   font-family: 'Satisfy', cursive;
+  color: rgb(79, 42, 12);
 }
 
 
 tei-div[type="impreso"]{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 90%;
+  font-size: 80%;
+  background-color: rgb(243, 225, 202);
 }
 
 tei-persname {
@@ -55,7 +63,8 @@ tei-persname {
 
 tei-foreign{
   font-style: italic;
-  color: rgb(97, 37, 111);
+  font-weight: bold;
+  color: rgb(135, 69, 150);
 }
 
 tei-abbr::before{
@@ -77,12 +86,12 @@ tei-del{
 }
 
 tei-add{
-  color: lightslategray;
+  color: rgb(119, 129, 153);
   font-weight: bold;
 }
 
 tei-gap {
-  background-color: black;
+  background-color: rgb(126, 113, 113);
   content: "x";
 }
 
@@ -97,7 +106,7 @@ tei-lb::before {
 }
 
 tei-signed{
-  font-size: 150%;
+  font-size: 170%;
   font-weight: bold;
   color: rgb(40, 127, 123);
   font-family: 'Ms Madi', cursive;}
